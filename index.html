@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/19f1548ae8.js"
       crossorigin="anonymous"
@@ -21,86 +21,99 @@
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <div class="header">
-          <i class="fa-brands fa-instagram"></i>
-          <a class="navbar-brand">Instagram</a>
-        </div>
+        <i class="fa-brands fa-instagram"></i>
+        <a class="navbar-brand">Instagram</a></div>
         <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Launch demo modal
-        </button>
+        <div class="title4">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Create a new post
+          </button>
 
-        <!-- Modal -->
-
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Modal title
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">...</div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
-                </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Create a new post
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Caption:
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Add a caption of your post</label></div>
+                    <div class="emoji">
+                    <i class="fa-solid fa-camera" style="color: #070808;"></i>
+                    <i class="fa-solid fa-location-dot" style="color: #0a0a0a;"></i></div>
+                
+               
+                </div>
+                <div class="modal-footer">
+                  
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">
+                    Publish
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div>
+    <div class="toggle">
       <a href="grid.html"><i class="fa-solid fa-table-cells"></i></a>
       <a href="index.html"><i class="fa-solid fa-stop"></i></a>
     </div>
 
     <!-- Card 1 -->
     <div class="post-header">
-      <div class="card" style="width: 25rem">
-        <h5 class="card-title">My crazy Dog spark!</h5>
+      <div class="card mx-auto" style="width: 25rem">
+        <h5 class="card-title">Amazing Lamborghini Aventador!</h5>
         <img
-          src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_S.jpg"
+          src="https://i.ytimg.com/vi/0id5rVsErUw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfJYmIyDYzp2uxNktN7lm6GOOnRQ"
           class="card-img-top"
           alt="..."
         />
@@ -110,14 +123,13 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
       <!-- Card 2 -->
-      <div class="card" style="width: 25rem">
-        <h5 class="card-title">The greatest croatia!</h5>
+      <div class="card mx-auto" style="width: 25rem">
+        <h5 class="card-title">The fastest McLaren!</h5>
         <img
-          src="https://static.independent.co.uk/2023/06/27/17/iStock-487277594.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/McLaren_P1.jpg/338px-McLaren_P1.jpg"
           class="card-img-top"
           alt="..."
         />
@@ -127,24 +139,24 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
       <!-- Card 3 -->
-      <div class="card" style="width: 25rem">
-        <h5 class="card-title">Amazing Goal by Cristiano!</h5>
-        <img
-          src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/03/21/cristiano-ronaldo-goal.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <strong>204 likes</strong>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="post-header">
+        <div class="card mx-auto" style="width: 25rem">
+          <h5 class="card-title">The greatest Mercedes!</h5>
+          <img
+            src="https://www.usnews.com/object/image/0000018f-1035-dfeb-ad9f-b677bcc20000/23c0233-025-source.jpg?update-time=1713963907801&size=responsive640"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <strong>204 likes</strong>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
       </div>
     </div>

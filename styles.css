@@ -1,4 +1,27 @@
 .header {
 display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 2px;
+}
+.toggle {
+    display: flex;
+        justify-content: center;
+        column-gap: 15px;
+}
+.title3 {
+    display: flex;
+    column-gap: 10px;
+}
+.title4 {
+    display: flex;
+    column-gap: 10px;
+}
+.col img {
+    height: 90%;
+    width: 100%
+}
+.form-floating {
+    padding: 10px;
 }
 
